@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Javier Espinal — UX Engineer in training, designing and creating for accessibility." />
+  <title>Javier Espinal — UX Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <span class="nav-name">Javier Espinal</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-name">
+      <div class="hero-text">
+        <p class="hero-eyebrow">UX Engineer in training</p>
+        <h1 class="hero-name" id="hero-name">Javier<br>Espinal</h1>
+        <p class="hero-tagline">Designing and creating for accessibility — where empathy, research, and code come together to build experiences that work for everyone.</p>
+        <div class="hero-links">
+          <a href="#work" class="hero-cta">See my work</a>
+          <a href="#contact" class="hero-secondary">Get in touch</a>
+        </div>
+      </div>
+      <!-- Replace this div with <img src="your-photo.jpg" alt="Javier Espinal" class="hero-photo"> -->
+      <div class="hero-photo" role="img" aria-label="Photo of Javier Espinal">
+        <span>your photo here</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-h">
+      <p class="section-label" aria-hidden="true">About me</p>
+      <h2 class="sr-only" id="about-h">About me</h2>
+      <div class="about-grid">
+        <div>
+          <div class="about-body">
+            <p>I'm a UX Engineer in training — currently pursuing my <strong>MS in User Experience at Arizona State University</strong> while building my frontend skills through The Odin Project. My background is in psychology and behavioral health, which shapes how I think about users: with clinical curiosity and a lot of patience.</p>
+            <p>I care deeply about <strong>accessibility and inclusive design</strong>. I believe everyone deserves a digital experience that works for them — regardless of ability, age, or tech experience. That belief drives every project I take on.</p>
+            <p>Before pivoting to UX, I worked as a <strong>Registered Behavior Technician</strong>, supporting individuals with ASD and developmental disabilities through individualized therapy. That work taught me how to observe, document, adapt — skills that transfer directly to user research.</p>
+          </div>
+          <div class="traits">
+            <div class="trait">
+              <div class="trait-icon" aria-hidden="true">🔍</div>
+              <p class="trait-title">Research-grounded</p>
+              <p class="trait-desc">I use data and observation — not assumptions — to understand what users actually need.</p>
+            </div>
+            <div class="trait">
+              <div class="trait-icon" aria-hidden="true">♿</div>
+              <p class="trait-title">Accessibility-first</p>
+              <p class="trait-desc">Accessibility isn't a checklist for me — it's a design philosophy I apply from the start.</p>
+            </div>
+            <div class="trait">
+              <div class="trait-icon" aria-hidden="true">🤝</div>
+              <p class="trait-title">Collaborative</p>
+              <p class="trait-desc">I thrive working across disciplines, listening first and synthesizing across perspectives.</p>
+            </div>
+            <div class="trait">
+              <div class="trait-icon" aria-hidden="true">💻</div>
+              <p class="trait-title">Building in code</p>
+              <p class="trait-desc">I design and implement — I don't just hand off. I want to build what I design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-sidebar">
+          <div class="sidebar-block">
+            <p class="sidebar-label">Currently</p>
+            <p class="sidebar-val">MS in UX</p>
+            <p class="sidebar-val-sub">Arizona State University<br>Expected May 2027</p>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-label">Also learning</p>
+            <p class="sidebar-val">The Odin Project</p>
+            <p class="sidebar-val-sub">HTML · CSS · JavaScript</p>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-label">Background</p>
+            <p class="sidebar-val">BA Psychology</p>
+            <p class="sidebar-val-sub">University of Puerto Rico<br>Río Piedras, 2024</p>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-label">Languages</p>
+            <p class="sidebar-val">English · Spanish</p>
+            <p class="sidebar-val-sub">Both native</p>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-label">Based in</p>
+            <p class="sidebar-val">El Paso, TX</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- WORK -->
+    <section id="work" aria-labelledby="work-h">
+      <div class="work-inner">
+        <p class="section-label" aria-hidden="true">Work</p>
+        <h2 class="sr-only" id="work-h">Work</h2>
+        <div class="work-grid">
+
+          <!-- PROJECT 1: Real project from HSE 521 -->
+          <article class="project-card">
+            <!-- Replace with: <img src="amazon-project.jpg" alt="Amazon redesign wireframes" class="project-thumb"> -->
+            <div class="project-thumb amazon" role="img" aria-label="Amazon search and filter redesign wireframes">
+              Amazon Search &amp; Filter Redesign
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Product redesign</span>
+              <h3 class="project-title">Amazon Search &amp; Filter — Usability Redesign</h3>
+              <p class="project-desc">Redesigned Amazon's search and filter panel to reduce cognitive load and improve usability for non-expert users. Conducted heuristic evaluation, cognitive task analysis, user personas, journey mapping, and low-fidelity wireframing.</p>
+              <div class="project-meta">
+                <span class="project-chip">Heuristic evaluation</span>
+                <span class="project-chip">Journey mapping</span>
+                <span class="project-chip">Wireframing</span>
+                <span class="project-chip">HSE 521</span>
+              </div>
+              <a href="#" class="project-link" aria-label="View Amazon redesign case study">View case study →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Placeholder -->
+          <article class="project-card">
+            <div class="project-thumb" role="img" aria-label="Project preview placeholder">[ add project image ]</div>
+            <div class="project-body">
+              <span class="project-tag">UX Research</span>
+              <h3 class="project-title">Your next project</h3>
+              <p class="project-desc">Describe the problem you tackled, your process, and the outcome. What did you learn? How did your work make the experience better?</p>
+              <div class="project-meta">
+                <span class="project-chip">User research</span>
+                <span class="project-chip">Prototyping</span>
+              </div>
+              <a href="#" class="project-link">View case study →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Placeholder -->
+          <article class="project-card">
+            <div class="project-thumb" role="img" aria-label="Project preview placeholder">[ add project image ]</div>
+            <div class="project-body">
+              <span class="project-tag">Frontend</span>
+              <h3 class="project-title">Odin Project build</h3>
+              <p class="project-desc">A project from The Odin Project curriculum demonstrating your growing frontend skills — HTML, CSS, and JavaScript working together.</p>
+              <div class="project-meta">
+                <span class="project-chip">HTML</span>
+                <span class="project-chip">CSS</span>
+                <span class="project-chip">JavaScript</span>
+              </div>
+              <a href="https://github.com/jrpinals" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Placeholder -->
+          <article class="project-card">
+            <div class="project-thumb" role="img" aria-label="Project preview placeholder">[ add project image ]</div>
+            <div class="project-body">
+              <span class="project-tag">Accessibility</span>
+              <h3 class="project-title">Accessibility audit</h3>
+              <p class="project-desc">An in-depth accessibility review of an existing product — identifying WCAG violations, proposing fixes, and documenting the findings for a development team.</p>
+              <div class="project-meta">
+                <span class="project-chip">WCAG 2.1</span>
+                <span class="project-chip">ARIA</span>
+                <span class="project-chip">Screen readers</span>
+              </div>
+              <a href="#" class="project-link">View case study →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-h">
+      <p class="section-label" aria-hidden="true">Skills</p>
+      <h2 class="sr-only" id="skills-h">Skills</h2>
+      <div class="skills-cols">
+        <div>
+          <p class="skill-col-title">UX &amp; Design</p>
+          <ul class="skill-list">
+            <li><span class="dot" aria-hidden="true"></span>UX research &amp; analysis</li>
+            <li><span class="dot" aria-hidden="true"></span>Heuristic evaluation</li>
+            <li><span class="dot" aria-hidden="true"></span>Wireframing &amp; prototyping</li>
+            <li><span class="dot" aria-hidden="true"></span>Journey mapping</li>
+            <li><span class="dot" aria-hidden="true"></span>Persona development</li>
+            <li><span class="dot" aria-hidden="true"></span>Figma</li>
+            <li><span class="dot" aria-hidden="true"></span>Visual design</li>
+          </ul>
+        </div>
+        <div>
+          <p class="skill-col-title">Code</p>
+          <ul class="skill-list">
+            <li><span class="dot" aria-hidden="true"></span>HTML</li>
+            <li><span class="dot" aria-hidden="true"></span>CSS</li>
+            <li><span class="dot" aria-hidden="true"></span>JavaScript (learning)</li>
+            <li><span class="dot" aria-hidden="true"></span>Responsive design</li>
+            <li><span class="dot" aria-hidden="true"></span>Git &amp; GitHub</li>
+            <li><span class="dot" aria-hidden="true"></span>MS Office</li>
+          </ul>
+        </div>
+        <div>
+          <p class="skill-col-title">Accessibility &amp; Research</p>
+          <ul class="skill-list">
+            <li><span class="dot" aria-hidden="true"></span>WCAG 2.1 guidelines</li>
+            <li><span class="dot" aria-hidden="true"></span>ARIA semantics</li>
+            <li><span class="dot" aria-hidden="true"></span>Keyboard navigation testing</li>
+            <li><span class="dot" aria-hidden="true"></span>Behavior observation</li>
+            <li><span class="dot" aria-hidden="true"></span>Data collection &amp; analysis</li>
+            <li><span class="dot" aria-hidden="true"></span>Report writing</li>
+            <li><span class="dot" aria-hidden="true"></span>Design thinking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- RESUME -->
+    <section id="resume" aria-labelledby="resume-h">
+      <div class="resume-inner">
+        <p class="section-label" aria-hidden="true">Resume</p>
+        <h2 class="sr-only" id="resume-h">Resume</h2>
+
+        <div class="timeline" aria-label="Experience and education">
+
+          <div class="tl-item">
+            <div class="tl-date">Aug 2025 — present</div>
+            <div>
+              <p class="tl-type">Work</p>
+              <p class="tl-role">Registered Behavior Technician</p>
+              <p class="tl-org">Action Behavior Centers — El Paso, TX</p>
+              <p class="tl-desc">Implemented individualized treatment plans for patients with ASD, conducted direct ABA therapy sessions, and monitored client progress with careful data tracking. Developed strong skills in behavioral observation and adaptive communication.</p>
+              <div class="tl-tags">
+                <span class="tl-tag">ABA therapy</span>
+                <span class="tl-tag">Behavior observation</span>
+                <span class="tl-tag">Data tracking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-date">2024 — present</div>
+            <div>
+              <p class="tl-type">Education</p>
+              <p class="tl-role">MS in User Experience</p>
+              <p class="tl-org">Arizona State University — Expected May 2027</p>
+              <p class="tl-desc">Coursework in Methods &amp; Tools in Human Systems Engineering and Fundamentals of Technical Communication &amp; AI. Applied research in usability evaluation, product redesign, and accessibility.</p>
+              <div class="tl-tags">
+                <span class="tl-tag">HSE 521</span>
+                <span class="tl-tag">Human systems engineering</span>
+                <span class="tl-tag">UX research</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-date">Jan – Jun 2024</div>
+            <div>
+              <p class="tl-type">Volunteer</p>
+              <p class="tl-role">Student Volunteer</p>
+              <p class="tl-org">Psychopedagogical Institute of Puerto Rico — Bayamón, PR</p>
+              <p class="tl-desc">Supported teachers in activity execution for participants with ASD and developmental disabilities. Led dynamic workshops focused on skill development and collaborated on educational program design.</p>
+              <div class="tl-tags">
+                <span class="tl-tag">ASD support</span>
+                <span class="tl-tag">Workshop facilitation</span>
+                <span class="tl-tag">Inclusive education</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-date">2020 – 2024</div>
+            <div>
+              <p class="tl-type">Education</p>
+              <p class="tl-role">BA in Psychology</p>
+              <p class="tl-org">University of Puerto Rico — Río Piedras Campus</p>
+              <p class="tl-desc">Relevant coursework in Research Methodology in Psychology I &amp; II. Built a foundation in human behavior, data collection, and research design that directly informs my UX practice.</p>
+              <div class="tl-tags">
+                <span class="tl-tag">Research methods</span>
+                <span class="tl-tag">Psychology</span>
+                <span class="tl-tag">Data analysis</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="certs">
+          <p class="cert-title">Certifications</p>
+          <ul class="cert-list">
+            <li>Psychological First Aid (PFA) — University of Puerto Rico, Río Piedras</li>
+            <li>Psychological Skills for Recovery — CITI</li>
+            <li>Design and Facilitation of Psychoeducational Workshops — UPR</li>
+            <li>Social &amp; Behavior Research Basic/Refresher — CITI (valid through 2027)</li>
+            <li>Health Information Privacy &amp; Security (HIPS) for Clinical Investigators — CITI</li>
+          </ul>
+        </div>
+
+        <div class="resume-dl-row">
+          <!-- Update href to point to your actual resume PDF -->
+          <a href="javier_espinal_resume.pdf" class="resume-dl" aria-label="Download full resume as PDF">↓ Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-h">
+      <p class="section-label" aria-hidden="true">Contact</p>
+      <h2 class="sr-only" id="contact-h">Contact</h2>
+      <p class="contact-intro">I'm open to internships, collaborations, and conversations about accessibility, UX, and building things that work for everyone. Don't hesitate to reach out.</p>
+      <div class="contact-list">
+        <a href="mailto:javierrespinal@gmail.com" class="contact-row">
+          <span class="cicon" aria-hidden="true">✉</span>
+          javierrespinal@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/javier-espinal-3a77a9388" target="_blank" rel="noopener" class="contact-row">
+          <span class="cicon" aria-hidden="true">in</span>
+          linkedin.com/in/javier-espinal-3a77a9388
+        </a>
+        <a href="https://github.com/jrpinals" target="_blank" rel="noopener" class="contact-row">
+          <span class="cicon" aria-hidden="true">&lt;/&gt;</span>
+          github.com/jrpinals
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Javier Espinal</span>
+    <span>Designed &amp; built with accessibility in mind</span>
+  </footer>
+
+</body>
+</html>
